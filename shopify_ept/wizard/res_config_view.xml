@@ -566,7 +566,8 @@
                                 </div>
                                 <div class="content-group">
                                     <div class="mt16">
-                                        <field name="shopify_credit_tax_account_id" attrs="{'required' : [('shopify_apply_tax_in_order','=','create_shopify_tax')]}"
+                                        <field name="shopify_credit_tax_account_id"
+                                               attrs="{'required' : [('shopify_apply_tax_in_order','=','create_shopify_tax'),('shopify_instance_id','!=',False)]}"
                                                class="o_light_label"/>
                                     </div>
                                 </div>
@@ -584,7 +585,8 @@
                                 </div>
                                 <div class="content-group">
                                     <div class="mt16">
-                                        <field name="shopify_invoice_tax_account_id" attrs="{'required' : [('shopify_apply_tax_in_order','=','create_shopify_tax')]}"
+                                        <field name="shopify_invoice_tax_account_id"
+                                               attrs="{'required' : [('shopify_apply_tax_in_order','=','create_shopify_tax'),('shopify_instance_id','!=',False)]}"
                                                class="o_light_label"/>
                                     </div>
                                 </div>
